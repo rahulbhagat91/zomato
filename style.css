@@ -11,14 +11,17 @@ body {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   z-index: 9999;
   padding: 2px 5px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 .navbar__brand {
   width: 100px;
@@ -45,6 +48,7 @@ body {
 
 .container {
   padding: 16px 16px;
+  margin-top: 70px;
 }
 .hero__image__container {
   position: relative;
@@ -57,6 +61,7 @@ body {
   width: 100%;
   border-radius: 10px;
   z-index: 2;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 .hero__image__shape {
   position: absolute;
@@ -108,6 +113,12 @@ body {
   text-align: center;
 }
 
+.food__menu__card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  transition: 0.3s;
+  width: 100%;
+}
 .food__list__container {
   position: relative;
   margin: 4rem 0;
@@ -123,7 +134,9 @@ body {
 .food__menu__card__list {
   width: 100%;
 }
+.food__menu__card{
 
+}
 .food__menu__card__image {
   border-radius: 6px 6px 0px 0px;
   width: 100%;
@@ -235,7 +248,7 @@ footer img{
 footer ul li{
   list-style: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
   .hero__container {
     display: flex;
     flex-direction: row-reverse;
